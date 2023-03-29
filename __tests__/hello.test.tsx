@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import handler from '~/pages/api/hello'
+import '@testing-library/jest-dom/extend-expect'
 
 describe('API Route: /api/hello', () => {
 	it('returns the correct JSON response', () => {

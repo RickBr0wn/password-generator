@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { ReactNode } from 'react'
 import App from '../src/pages/_app'
+import '@testing-library/jest-dom/extend-expect'
 
 jest.mock('../src/components/layout', () => ({
 	__esModule: true,
