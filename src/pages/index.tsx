@@ -48,20 +48,11 @@ const Index: NextPage<IndexProps> = (): JSX.Element => {
 	const [passwordStrength, setPasswordStrength] = useState<PasswordStrength>('weak')
 
 	const toast = useToast()
-	const { hasCopied, onCopy } = useClipboard(password)
+
 
 	const toastId = useRef<string | number>()
 
-	const { getRootProps } = useRadioGroup({ name: 'checkbox-group' })
-
 	const resetCheckboxes = () => {
-		const checkboxes = getRootProps().children
-		const checkboxArray = Children.toArray(checkboxes)
-
-		checkboxArray.forEach(checkbox => {
-			checkbox.props.checked = false
-		})
-
 		setIncludeNumbers(true)
 		setIncludeSymbols(true)
 		setIncludeUppercase(true)
