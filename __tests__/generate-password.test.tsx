@@ -6,7 +6,7 @@ describe('generatePassword function', () => {
 		const uppercaseRegex = /[A-Z]/
 		const lowercaseRegex = /[a-z]/
 		const digitRegex = /\d/
-		const symbolRegex = /[!@#$%^&*(),.?":{}|<>]/
+		const symbolRegex = /[!@#$%^&*()?":{}|<>]/
 		expect(password.length).toEqual(12)
 		expect(password).toEqual(expect.stringMatching(uppercaseRegex))
 		expect(password).toEqual(expect.stringMatching(lowercaseRegex))

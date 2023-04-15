@@ -11,7 +11,7 @@ export const generatePassword = (
 	const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz'
 	const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 	const numberChars = '0123456789'
-	const symbolChars = '!@#$%^&*()_+~`|}{[]:;?><,./-='
+	const symbolChars = '!@#$%^&*()-_=+[]{}|;:<>/?'
 
 	let selectedChars = lowercaseChars
 
