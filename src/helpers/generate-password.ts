@@ -4,6 +4,10 @@ export const generatePassword = (
 	includeNumbers: boolean,
 	includeSymbols: boolean
 ) => {
+	if (length < 1) {
+		throw new Error('Password length must be greater than or equal to 1')
+	}
+
 	const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz'
 	const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 	const numberChars = '0123456789'
